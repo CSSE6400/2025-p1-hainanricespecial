@@ -17,7 +17,7 @@ def get_todos():
         "completed": True,
         "deadline_at": "2023-02-27T00:00:00",
         "created_at": "2023-02-20T00:00:00",
-        "updated_at": "2023-02-20T00:00:00",
+        "updated_at": "2023-02-20T00:00:00"
     }])
 
 @api.route('/todos/<int:id>', methods=['GET'])
@@ -30,8 +30,8 @@ def get_todo(id):
         "completed": True,
         "deadline_at": "2023-02-27T00:00:00",
         "created_at": "2023-02-20T00:00:00",
-        "updated_at": "2023-02-20T00:00:00",
-    }])
+        "updated_at": "2023-02-20T00:00:00"
+    }]), 200
 
 @api.route('/todos', methods=['POST'])
 
@@ -43,7 +43,7 @@ def create_todo():
         "completed": True,
         "deadline_at": "2023-02-27T00:00:00",
         "created_at": "2023-02-20T00:00:00",
-        "updated_at": "2023-02-20T00:00:00",
+        "updated_at": "2023-02-20T00:00:00"
     }]), 201
 
 @api.route('/todos/<int:id>', methods=['PUT'])
@@ -56,8 +56,8 @@ def update_todo(id):
         "completed": True,
         "deadline_at": "2023-02-27T00:00:00",
         "created_at": "2023-02-20T00:00:00",
-        "updated_at": "2023-02-20T00:00:00",
-    }])
+        "updated_at": "2023-02-20T00:00:00"
+    }]), 200
 
 @api.route('/todos/<int:id>', methods=['DELETE'])
 
@@ -69,5 +69,5 @@ def delete_todo(id):
         "completed": True,
         "deadline_at": "2023-02-27T00:00:00",
         "created_at": "2023-02-20T00:00:00",
-        "updated_at": "2023-02-20T00:00:00",
-    }])
+        "updated_at": "2023-02-20T00:00:00"
+    }]), 200
