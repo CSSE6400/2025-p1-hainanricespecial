@@ -50,7 +50,7 @@ def create_todo():
 
 def update_todo(id):
     return jsonify([{
-        "id": id,
+        "id": 1,
         "title": "Watch CSSE6400 Lecture",
         "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
@@ -63,7 +63,7 @@ def update_todo(id):
 
 def delete_todo(id):
     return jsonify([{
-        "id": id,
+        "id": 1,
         "title": "Watch CSSE6400 Lecture",
         "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
